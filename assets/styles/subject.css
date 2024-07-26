@@ -408,9 +408,8 @@ section {
 }
 
 
-.solution {
+.sources {
     /* border: 1px solid #fff; */
-    background-color: rgba(255, 255, 255, 0.03);
     font-family: "Open Sans", sans-serif;
 
     & .inner-section-wrapper {
@@ -486,5 +485,96 @@ footer {
         align-items: center;
         justify-content: center;
         padding: 20px;
+    }
+}
+
+
+.gs-embed {
+    /* border: 1px solid #fff; */
+    font-family: "Open Sans", sans-serif;
+    /* border-bottom: 1px solid #fff; */
+
+    &#dataset {
+        background-color: rgba(255, 255, 255, 0.03);
+    }
+    &#analysis {
+        background-color: #151515;
+    }
+
+    & .inner-section-wrapper {
+        /* border: 1px solid #fff; */
+
+        & header {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* gap: 12px; */
+
+            & h1 {
+                font-size: 28px;
+                font-weight: 600;
+            }
+            
+            & .external-link {
+                /* border: 1px solid #fff; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+                padding: 6px 12px;
+                transition: 0.15s linear;
+                background-color: #a758f0;
+
+                &:hover {
+                    background-color: #b352fd;
+                }
+
+                & svg {
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+        } 
+
+        & iframe {
+            border: none;
+            height: auto;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    }
+}
+
+
+.conditions {
+    background-color: rgba(255, 255, 255, 0.03);
+
+    & .inner-section-wrapper {
+        /* border: 1px solid #fff; */
+
+        & h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        & ul {
+            list-style: none;
+
+            & li {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                svg {
+                    fill: #3fb950;
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
     }
 }
